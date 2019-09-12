@@ -17,10 +17,13 @@ StreetNetwork:
   updates:
     - September 5, 2019
 ---
+{% capture abstract %}
+This dataset has been derived from the Transportation.Roads dataset and is designed to be used for network analysis (drive times, routes, service areas) and was developed as part of the FHWA-funded <a href='{% post_url 2018-11-07-multi-modal-travel-shed-analysis-project %}'>Multimodal Travelshed Project</a>.
+{% endcapture %}
 {% include abstract.html
   name="Street Network Analysis"
   download="https://drive.google.com/a/utah.gov/uc?id=1NmMCS8HjxFPF-K6XjaV0FznhS0ejwqRc&export=download"
-  abstract="This dataset has been derived from the Transportation.Roads dataset and is designed to be used for network analysis (drive times, routes, service areas)." %}
+  abstract=abstract %}
 <div class="grid package">
   <div class="grid__col grid__col--12-of-12">
     <h3 id="StreetNetwork">
@@ -28,7 +31,7 @@ StreetNetwork:
     </h3>
   </div>
   <div class="grid__col grid__col--12-of-12 package-content">
-    <p><a href="{{ '/data/transportation/roads-system' | prepend: site.baseurl }}">Transportation.Roads</a> is the recommended starting point for almost anything related to Utah street centerlines. This includes cartography, address location, and, now, network analysis. (It is also worth mentioning that the UDOT linear referencing system is derived from attributes in this dataset).</p>
+    <p><a href="{% link data/transportation/roads-system/index.html %}">Transportation.Roads</a> is the recommended starting point for almost anything related to Utah street centerlines. This includes cartography, address location, and, now, network analysis. (It is also worth mentioning that the UDOT linear referencing system is derived from attributes in this dataset).</p>
     <p>While data used to support network analysis has many potential parameters, at a basic level, two components are especially important: 1) connectivity and 2) impedance (i.e. travel speed/costs).</p>
     <p>Connectivity of centerline features in Transportation.Roads is actively maintained but an impedance measure, while planned for later this year, has not been actively enforced to date. However, it is possible to use a combination of cartographic feature codes (<code>CFCC</code> field), spatial queries, and the existing values in the <code>SPD_LMT</code> field to create a relatively crude but effective representation of speed limits that, then, can be used as an input to an impedance measure.</p>
     Important Fields:

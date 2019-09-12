@@ -17,8 +17,8 @@ The following applies to all services, downloads, links, and other content inclu
 
 AGRC requests that where possible and practical **appropriate attribution** shall be made by users of this website or any other services provided by AGRC with the following criteria:
 
- - an appropriate statement, reflecting this disclaimer be used on all products using SGID geospatial data as a source, and that a currency date and stewardship credit for the data be included on the map; and
- - standards-compliant and/or [search engine-optimized (SEO) metadata]({{ "/gis-data-sharing/metadata/" | prepend: site.baseurl }}), where available, be included with any distribution of all geospatial data
+- an appropriate statement, reflecting this disclaimer be used on all products using SGID geospatial data as a source, and that a currency date and stewardship credit for the data be included on the map; and
+- standards-compliant and/or [search engine-optimized (SEO) metadata]({% link gis-data-sharing/metadata/index.md %}), where available, be included with any distribution of all geospatial data
 
 ### About Geographic Data
 
@@ -32,7 +32,6 @@ Geographic features are represented by discrete points, lines, and polygons. Gen
 
 Raster data sets, which represent geographic phenomena using a grid of raster cells or pixels, is usually collected from satellite or other remotely-sensed or pixel-based data. This includes aerial photos, digital elevation models, scanned images of paper maps, pre-rendered map image tiles, etc. For thematic data, raster is particularly useful for data that lacks a well-defined borders like soil and vegetation types, climate zones, elevation, etc. Common file formats include JPG, GeoTIFF, PNG, ESRI Grid, DEM, and IMG.
 
-
 ##### Metadata
 
-To facilitate appropriate utilization, best practices dictate that metadata accompany geographic data files and services. Metadata can take the form of FGDC, ISO, ArcMap formats as well as other techniques. Be sure to read and consider our [best practice guide for effective metadata]({{ "/gis-data-sharing/metadata/" | prepend: site.baseurl }}).
+To facilitate appropriate utilization, best practices dictate that metadata accompany geographic data files and services. Metadata can take the form of FGDC, ISO, ArcMap formats as well as other techniques. Be sure to read and consider our [best practice guide for effective metadata]({% link gis-data-sharing/metadata/index.md %}).

@@ -34,7 +34,7 @@ _**bold italics**_
 ```
 - html
 ```html
-<a href="{{ "/path/to/item/" | prepend: site.baseurl }}">link text</a>
+<a href="{%J link path/to/item.extension %}">link text</a>
 ```
 #### link to post:
 
@@ -58,21 +58,21 @@ _**bold italics**_
 
 - markdown
 ```md
-![alt text]({{ "/path/to/item/" | prepend: site.baseurl }})
+![alt text]({% link path/to/item.extension %})
 ```
 - html
 ```html
-<img src="{{ "/path/to/image.jpg" alt="hover text" | prepend: site.baseurl }}"/>
+<img src="{% link path/to/image.jpg %}" alt="hover text"/>
 ```
 
 #### link alt text
 ```md
-[link text]({{ "/path/to/item/" | prepend: site.baseurl }} "popup text")
+[link text]({% link path/to/item.extension %} "popup text")
 ```
 
 #### css in markdown
 ```md
-![alt text]({{ "/path/to/item/" | prepend: site.baseurl }})
+![alt text]({% link path/to/item.extension %})
 {: .css-class-name}
 ```
 
