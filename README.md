@@ -11,7 +11,7 @@ License: [MIT](/LICENSE).
 1. Check out this repository
 1. run `docker-compose up`
 1. browse to `localhost:4000`
-1. run `docker pull jekyll/jekyll` to update your image
+1. run `docker pull jekyll/jekyll:4.0` to update your image
 1. run `grunt imagemin:images` to minify images
 
 ## Common Website Tips
@@ -30,7 +30,7 @@ _**bold italics**_
 
 - markdown
 ```md
-[link text]({{ "/path/to/item/" | prepend: site.baseurl }})
+[link text]({% link path/to/item.extension" %})
 ```
 - html
 ```html
@@ -40,11 +40,11 @@ _**bold italics**_
 
 - markdown
 ```md
-[link text]({{site.baseurl}}{% post_url 2016-05-26-file-name-without-extension %})
+[link text]({% post_url 2016-05-26-file-name-without-extension %})
 ```
 - html
 ```html
-<a href="{{site.baseurl}}{% post_url 2016-05-26-file-name-without-extension %}">link text</a>
+<a href="{% post_url 2016-05-26-file-name-without-extension %}">link text</a>
 ```
 
 #### external link
